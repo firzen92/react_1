@@ -1,0 +1,23 @@
+.profile {
+    display: flex;
+    border-bottom: 1px solid;
+    padding: 8px 0;
+    margin-bottom: 24px;
+    .image {
+        img {
+            border-radius: 25px;
+            margin: 0 5px;
+        }
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 600;
+        .date {
+            font-weight: 400;
+        }
+    }
+}

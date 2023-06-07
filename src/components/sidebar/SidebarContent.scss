@@ -1,0 +1,12 @@
+.container {
+    coral-tree-item {
+        min-width: unset;
+        &::part(label) {
+            width: unset;
+        } 
+    }
+    coral-button {
+        width: -webkit-fill-available;
+        margin: 5px;
+    }
+}

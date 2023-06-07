@@ -1,0 +1,21 @@
+carbon-sidebar-layout {
+  height: 100vh;
+}
+
+[slot="sidebar-content"] {
+  text-align: center;
+  padding: 24px 12px;
+}
+
+[slot="main-content"] {
+  // text-align: center;
+  padding: 16px;
+  background: #0d0d0d;
+}
+
+#layout {
+  coral-header[slot="sidebar-header"], coral-header[slot="sidebar-content"], coral-header[slot="main-header"] {
+    height: 60px;
+    text-transform: unset;
+  }
+}

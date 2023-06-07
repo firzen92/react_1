@@ -3,12 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@elf/amber-loader": "^4.5.15",
+    "@elf/carbon-sidebar-layout": "^4.0.2",
+    "@elf/coral-accordion": "^4.5.0",
+    "@elf/coral-button": "^4.0.8",
+    "@elf/coral-header": "^4.6.2",
+    "@elf/coral-icon": "^4.5.14",
+    "@elf/coral-input": "^4.5.2",
+    "@elf/coral-select": "^4.5.14",
+    "@elf/coral-tab": "^4.0.10",
+    "@elf/coral-tab-bar": "^4.0.11",
+    "@elf/coral-tree": "^4.5.14",
+    "@elf/elf-theme-halo": "^4.1.4",
+    "@elf/emerald-grid": "^4.5.37",
+    "@grid/react-grid": "^1.1.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "rimraf": "^5.0.1",
+    "tr-grid-content-wrap": "^2.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.62.0"
   }
 }
