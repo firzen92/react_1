@@ -1,12 +1,12 @@
 import React from 'react'
 
-import classes from './FpCard.scss';
+import classes from './FpCard.module.scss';
 
-const FpCard = ({title, children}) => {
+const FpCard = ({title, height = 169, children}) => {
   return (
-    <div>
-        <coral-header level="1">{title}</coral-header>
-        <section>{children}</section>
+    <div className={classes.container} >
+        <coral-header level="2">{title}</coral-header>
+        <section className={classes.content}>{children}</section>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { getData, getInfraData } from "./InfraCommsConfig";
 import { columns } from "./InfraCommsConfig";
 
-import './InfraCommsGrid.scss';
+import styles from './InfraCommsGrid.module.scss';
 
 
 const InfraCommsGrid = () => {

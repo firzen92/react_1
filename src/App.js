@@ -1,10 +1,8 @@
 import "./App.scss";
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
-
 
 //React components
-
 import Root from "./pages/Root";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 
 //elf components
 import "@elf/carbon-sidebar-layout";
@@ -49,6 +47,9 @@ import Dashboard from "./components/dashboard/Dashboard";
 import DeliveryDirectPage from "./pages/DeliveryDirectPage";
 import CustomerViewPage from "./pages/CustomerViewPage";
 
+//loaders
+import {loader as InfoLoader} from './pages/CustomerViewPage';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -56,7 +57,7 @@ function App() {
     {path: '/', element: <Root></Root>, children: [
       {path: '/dashboard', element: <Dashboard/>},
       {path: '/assurance-support', element: <Outlet></Outlet>, children: [
-        {path: 'customer', element: <CustomerViewPage/>},
+        {path: 'customer', element: <CustomerViewPage/>, loader: InfoLoader},
         {path: 'ads-logs', element: <AdsLogs/>},
         {path: 'permission', element: <div>permission</div>},
       ]},

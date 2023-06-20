@@ -2,10 +2,8 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { useRef } from "react";
 
-import './Root.scss';
+import classes from './Root.module.scss';
 
-//context
-import Dummy from "../store/dummyContext";
 
 //components
 import SidebarTitle from "../components/header/SidebarTitle";
@@ -23,7 +21,7 @@ const Root = () => {
   
   return (
     <>
-      <carbon-sidebar-layout id="layout" ref={layout}>
+      <carbon-sidebar-layout id={classes.layout} ref={layout}>
         <coral-header slot="sidebar-header" level="1">
           <SidebarTitle layoutHandler={layoutHandler}></SidebarTitle>
         </coral-header>
@@ -35,9 +33,7 @@ const Root = () => {
           <MainHeader/>
         </coral-header>
         <coral-panel spacing slot="main-content">
-          <Dummy.Provider value={{name: 'Wick'}}>
-            <Outlet></Outlet>
-          </Dummy.Provider>
+          <Outlet></Outlet>
         </coral-panel>
       </carbon-sidebar-layout>
     </>

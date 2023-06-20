@@ -1,0 +1,15 @@
+.container {
+    box-sizing: border-box;
+    height: 145px;
+    background: #1A1A1A;
+    border: 1px solid rgba(64, 64, 64, 0.5);
+    flex-grow: 1;
+    display: inline-block;
+    padding-left: 8px;
+    padding-top: 3px;
+    white-space: pre-line;
+    &:focus {
+        border: 1px solid blue;
+        background: #0D0D0D;
+    }
+}

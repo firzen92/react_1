@@ -3,12 +3,15 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import CustomerViewProvider from "./store/customerViewContext";
 
 const root = document.getElementById('root');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CustomerViewProvider>
+      <App />
+    </CustomerViewProvider>
   </React.StrictMode>,
   root
 )

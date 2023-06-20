@@ -1,0 +1,10 @@
+.container {
+    flex: 1 1 0;
+    margin-right: 16px;
+    .content {
+        box-sizing: border-box;
+        background: #262626;
+        padding: 12px;
+        height: 169px;
+    }
+}

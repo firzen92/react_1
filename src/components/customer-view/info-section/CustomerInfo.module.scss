@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    // margin: 12px 0 12px 16px;
+    .address-container {
+        display: flex;
+        .label {
+            margin-right: 10px;
+        }
+    }
+}

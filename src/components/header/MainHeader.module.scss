@@ -1,0 +1,8 @@
+.main-header {
+    coral-input {
+        &::part(input-element) {
+            width: 300px;
+            height: 32px;
+        }
+    }
+}
